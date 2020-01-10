@@ -40,6 +40,6 @@ testem.log
 /e2e/src/*.js
 /e2e/src/*.map
 
-# System Files
+# System Files and other 
 .DS_Store
 Thumbs.db
