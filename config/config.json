@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "1001",
-    "database": "postgres",
+    "database": "new",
     "host": "127.0.0.1",
     "port": 5000,
     "dialect": "postgres",
@@ -11,7 +11,7 @@
   "test": {
     "username": "postgres",
     "password": "1001",
-    "database": "postgres",
+    "database": "new",
     "host": "127.0.0.1",
     "port": 5000,
     "dialect": "postgres",
