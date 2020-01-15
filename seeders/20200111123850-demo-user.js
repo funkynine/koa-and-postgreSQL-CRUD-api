@@ -1,7 +1,11 @@
 'use strict';
 
+const logger = require('../logger/logger');
+const LOG = require('../const/const');
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
+    logger({message: LOG.DB.SEEDERS, status: LOG.SUCCESS, method: LOG.DB.INSERT})
     return queryInterface.bulkInsert('Users', [{
       categories_id: 1,
       firstName: 'Petr3',
