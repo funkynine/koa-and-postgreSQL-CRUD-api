@@ -1,20 +1,23 @@
+// Middlewares
+const loggerMW = require('../middleware/logger.MW');
 const router = require('koa-router')()
 const userController = require('../controllers/user.controller');
 
-router.get('/', userController.get);
 
-router.get('/hasone', userController.hasOne);
+router.get('/', loggerMW, userController.get);
 
-router.get('/hasmany', userController.hasMany);
+router.get('/hasone', loggerMW, userController.hasOne);
 
-router.get('/belongsto', userController.belongsTo);
+router.get('/hasmany', loggerMW, userController.hasMany);
 
-router.get('/belongsmany', userController.belongsMany);
+router.get('/belongsto', loggerMW, userController.belongsTo);
 
-router.post('/', userController.create);
+router.get('/belongsmany', loggerMW, userController.belongsMany);
 
-router.put('/', userController.update);
+router.post('/', loggerMW, userController.create);
 
-router.delete('/', userController.delete);
+router.put('/', loggerMW, userController.update);
+
+router.delete('/', loggerMW, userController.delete);
 
 module.exports = router

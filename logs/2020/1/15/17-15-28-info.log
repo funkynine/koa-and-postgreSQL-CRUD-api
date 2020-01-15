@@ -1,0 +1,3 @@
+2020-01-15T15:15:28.466Z info: Method: GET, Message: URL: /hasone
+2020-01-15T15:15:28.469Z info: Method: undefined, Message: My first log
+2020-01-15T15:15:28.469Z error: Method: GET, Message: URL: /hasone
